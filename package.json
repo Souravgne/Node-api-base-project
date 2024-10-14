@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "nodemon server.ts"
+    "dev": "nodemon server.ts"
   },
   "keywords": [
     "rest",
@@ -15,9 +15,13 @@
   "author": "Sourav Dubey",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.12.0",
     "@types/node": "^22.7.5",
+    "eslint": "^9.12.0",
+    "globals": "^15.11.0",
     "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.8.1"
   }
 }
