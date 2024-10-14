@@ -1,5 +1,6 @@
 import express, { Request, Response, NextFunction } from 'express'; // Assuming config has an `env` property
 import globalErrorHandler from './middlewares/globalErrorHandler';
+import userRouter from './user/userRouter';
 
 const app = express();
 
@@ -13,6 +14,9 @@ app.get('/', (req: Request, res: Response, next: NextFunction) => {
         next(err); // Pass the error to the error-handling middleware
     }
 });
+
+
+app.use('/api/users' , userRouter)
 
 // Error-handling middleware
 app.use(
