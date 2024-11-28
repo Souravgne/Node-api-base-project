@@ -3,7 +3,7 @@ import globalErrorHandler from './middlewares/globalErrorHandler';
 import userRouter from './user/userRouter';
 
 const app = express();
-
+app.use(express.json());
 // routes
 app.get('/', (req: Request, res: Response, next: NextFunction) => {
     try {
